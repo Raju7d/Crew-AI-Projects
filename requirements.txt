@@ -1,0 +1,5 @@
+crewai
+langchain-google-genai # Used to interact with Google gemini models
+load_dotenv
+crewai_tools
+
