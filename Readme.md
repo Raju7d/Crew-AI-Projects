@@ -1,30 +1,41 @@
-# Problem Statement/ Project 
+# An End-to-End AI Agentic News Research & Writing System using CrewAI
 
-1. Create An Agent which will be a Researcher, which is responsible for some amazing blocks on different different topics but it has to d0 lot of research and communicate with  multiple agents
+## 1. Problem Statement
 
-# Goal:
-The goal is basically uncover groundbreaking technologies in the specific topic (or) This will be a news reporter which will be responsible in getting all the news details
+In today's fast-evolving tech landscape, discovering innovative technologies and presenting them in an easily digestible format is a real challenge. This project solves that by building an autonomous AI-based system capable of:
 
-Process:
-========
-1. Create an llm variable
-2. Create news_researcher_agent & news_writer_agent
-3. create a tool, Here i am going to use SerPerDevTool
+- Conducting deep research on any given tech topic
+- Communicating with multiple agents
+- Generating compelling, well-written blog-style news content
+
+## 2. Project Overview
+
+This project uses **CrewAI** to orchestrate two specialized agents:
+
+1. **News Researcher Agent**:  
+   - Performs in-depth research using a Google search simulation (via Serper.dev)
+   - Gathers insights and facts about the given topic
+
+2. **News Writer Agent**:  
+   - Converts the research into human-readable blog/news content
+   - Writes in a clear, engaging, and accessible tone
+
+These agents use **Google’s Gemini LLM** to simulate reasoning, writing, and planning tasks.
+
+## 3. Tech Stack Used
+Python - Core language for development 
+CrewAI - for agent framework
+Langchain - for tool/memory integration
+Google Gemini - for LLM capabilities
+Serper.dev API - for lightweight Google Search API
 
 
-# What is SerPerDevTool
-1. SerperDev tool is a world's fastets & cheapest Google search api ==> https://serper.dev/
-2. It is completely free for 2,500 queries
+## ⚙️ 4. Project Setup
+### 🔑 Required API Keys
+- [Serper API Key](https://serper.dev)
+- [Google Gemini API Key](https://aistudio.google.com/app/apikey)
 
-# How to create a serper api key
-1. Go to (https://serper.dev/)
-2. Signup & Signin
-3. Click on api key & copy it
-
-# How to create an Google API KEY
-1. Go to https://aistudio.google.com/app/apikey
-2. Click on **Create API Key**
-3. Select the anyone of the existing project and create it
-4. Copy and paste in .env file as a Google_api_key
+# Outcome of the Project
+<img width="643" alt="image" src="https://github.com/user-attachments/assets/0c35b5bf-c8e3-4c5c-ab12-e5d75e9344ec" />
 
 
